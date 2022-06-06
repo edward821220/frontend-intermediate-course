@@ -9,23 +9,28 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  .background {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    .box {
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
 }
-.background {
-  display: flex;
-  min-width: 100vw;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.box {
-  margin: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 .small-box {
   width: 300px;
   margin: 10px;
   transition: box-shadow 2s, filter 2s;
+  &:hover {
+    box-shadow: 5px 5px 5px black;
+    filter: brightness(1.5) contrast(1.2);
+  }
   .preview {
     width: 100%;
   }
@@ -45,9 +50,4 @@ body {
     align-self: center;
     color: white;
   }
-}
-
-.small-box:hover {
-  box-shadow: 5px 5px 5px black;
-  filter: brightness(1.5) contrast(1.2);
 }
