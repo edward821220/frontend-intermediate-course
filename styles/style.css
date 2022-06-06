@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(/pic/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.small-box {
+  width: 300px;
+  margin: 10px;
+  -webkit-transition: -webkit-box-shadow 2s, -webkit-filter 2s;
+  transition: -webkit-box-shadow 2s, -webkit-filter 2s;
+  transition: box-shadow 2s, filter 2s;
+  transition: box-shadow 2s, filter 2s, -webkit-box-shadow 2s, -webkit-filter 2s;
+}
+
+.small-box .preview {
+  width: 100%;
+}
+
+.small-box .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.small-box .head {
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+  margin-right: 15px;
+}
+
+.small-box .word {
+  list-style-type: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+}
+
+.small-box:hover {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  -webkit-filter: brightness(1.5) contrast(1.2);
+          filter: brightness(1.5) contrast(1.2);
+}
+/*# sourceMappingURL=style.css.map */
