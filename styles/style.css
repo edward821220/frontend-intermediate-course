@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
 }
 
-.background {
+body .background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.box {
+body .background .box {
   margin: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +39,13 @@ body {
   transition: -webkit-box-shadow 2s, -webkit-filter 2s;
   transition: box-shadow 2s, filter 2s;
   transition: box-shadow 2s, filter 2s, -webkit-box-shadow 2s, -webkit-filter 2s;
+}
+
+.small-box:hover {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  -webkit-filter: brightness(1.5) contrast(1.2);
+          filter: brightness(1.5) contrast(1.2);
 }
 
 .small-box .preview {
@@ -66,12 +73,5 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   color: white;
-}
-
-.small-box:hover {
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
-  -webkit-filter: brightness(1.5) contrast(1.2);
-          filter: brightness(1.5) contrast(1.2);
 }
 /*# sourceMappingURL=style.css.map */
