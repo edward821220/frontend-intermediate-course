@@ -55,3 +55,25 @@ function addHTML(data) {
 // }).then(function (response) {
 //   return response.json();
 // });
+
+// 卷軸到接近底部時載入新資料
+function addData() {
+  let documentElement = document.documentElement;
+
+  if (
+    documentElement.scrollTop + 10 >=
+    documentElement.scrollHeight - documentElement.clientHeight
+  ) {
+    getData((datas) => {
+      // 選取要添加的父元素
+      const box = document.querySelector(".box");
+
+      // 再把取得的資料加進去
+      for (let data of datas) {
+        box.innerHTML += addHTML(data);
+      }
+    });
+  }
+}
+
+window.addEventListener("scroll", addData);
