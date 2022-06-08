@@ -1,7 +1,9 @@
-const api = "https://api.twitch.tv/helix/streams";
+let api = "https://api.twitch.tv/helix/streams";
 const clientID = "mrouzbnt8je6fkv7daq7zhg9roh9pk"; // Twitch 官網註冊帳號取得 ID
 const accessToken = "9kpg0bru6np9gdan8vye623aps0ubq"; // 用 twitch CLI 取得 access token
 const request = new XMLHttpRequest();
+const button_eng = document.querySelector(".eng");
+const button_zh = document.querySelector(".zh");
 
 // 連接API取得資料
 function getData(cb) {
@@ -77,3 +79,33 @@ function addData() {
 }
 
 window.addEventListener("scroll", addData);
+
+button_zh.addEventListener("click", () => {
+  api = "https://api.twitch.tv/helix/streams?language=zh";
+  getData((datas) => {
+    // 選取要添加的父元素
+    const box = document.querySelector(".box");
+
+    // 先將原本的內容清空
+    box.innerHTML = "";
+    // 再把取得的資料加進去
+    for (let data of datas) {
+      box.innerHTML += addHTML(data);
+    }
+  });
+});
+
+button_eng.addEventListener("click", () => {
+  api = "https://api.twitch.tv/helix/streams?language=en";
+  getData((datas) => {
+    // 選取要添加的父元素
+    const box = document.querySelector(".box");
+
+    // 先將原本的內容清空
+    box.innerHTML = "";
+    // 再把取得的資料加進去
+    for (let data of datas) {
+      box.innerHTML += addHTML(data);
+    }
+  });
+});

@@ -21,6 +21,12 @@ body .background {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+body .background .language button {
+  font-size: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 body .background .box {
   margin: 50px;
   display: -webkit-box;
