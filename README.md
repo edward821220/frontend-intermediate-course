@@ -1,6 +1,17 @@
 # frontend-intermediate-course
 
-從新手到中手：前端工程加強班
+這是我參加 Lidemy 免費課程照著題目做出來的 Project，由於想把網頁排版跟JS練得更熟一點，所以作業8-10就沒跟了，想說那些工具優先順序可以擺到後面再學。   
+用到的技術包含：
+1.HTML+CSS排版   
+2.CSS預處理器SCSS   
+3.使用 JavaScript 串接 Twitch API 將實況主的名字和遊戲名字用 AJAX 方式導入   
+4.卷軸滾到接近畫面底部時會繼續載入新資料   
+5.中英文按鍵切換載入的實況主國家   
+
+Project Link: https://codepen.io/edward821220/full/abqWQpO
+
+
+以下是課程說明：
 
 這是一系列循序漸進的課程，從最基本的 HTML, CSS 開始，  
 經由各種實際案例慢慢講到與前端有關的其他知識例如 Ajax, CORS, gulp, webpack 等等。
