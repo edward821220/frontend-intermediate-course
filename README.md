@@ -13,9 +13,9 @@
 5.讓網頁變得更完整：加上 placeholder 與 infinite scroll  
 6.返璞歸真：vanilla js  
 7.走向國際：i18n  
-8.當我們包在一起：Webpack  
-9.節省 Request 的極致：一為全，全為一  
-10.改掉你的壞習慣：ESLint 與 standard
+x 8.當我們包在一起：Webpack  
+x 9.節省 Request 的極致：一為全，全為一  
+x 10.改掉你的壞習慣：ESLint 與 standard
 
 課程說明  
 課程進行的模式是這樣的，每週會出一次作業並且附上學習資源，讓學生能夠自學。  
